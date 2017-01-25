@@ -1,0 +1,46 @@
+.contact{
+    position: relative;
+    left: 25px;
+    margin: 20px auto;
+    height: 115px;
+    width: 230px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+
+.btnRemove{
+    float: right; 
+    margin-top: -50px;
+    margin-right: 20px; 
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.btnRemove:hover {
+    color: #000;
+}
+
+.name, .surname, .phone {
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80px;
+    padding-top: 15px;
+    margin-left: 80px;
+}
+
+.gender {
+    float: left;
+    margin: 0 0px 0 -50px;
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
