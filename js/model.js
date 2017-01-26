@@ -1,8 +1,8 @@
 class Contact {
     constructor(name){
-        this.name = '';
-        this.surname = '';
-        this.tel = '';
+        this.name = 'Undefined';
+        this.surname = 'Undefined';
+        this.tel = 'Undefined';
         this.gender = "m";
     }
     
@@ -32,6 +32,10 @@ class List {
     
     add(contact){
         this.contacts.push(contact);
+    }
+    
+    delete(i){
+        this.contacts.splice(i,1);
     }
 
 }
