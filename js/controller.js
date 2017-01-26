@@ -15,9 +15,9 @@ var appContacts = (function(){
     var deleteContact = function(){
 
         var index = _getIndex(contactsDOM,this.parentNode);
-        myContacts.delete(index);
+        myList.delete(index);
         this.parentNode.remove();
-        console.table(myContacts.contacts);
+        console.table(myList.contacts);
     }
 
 
@@ -77,7 +77,7 @@ var appContacts = (function(){
     var _editName = function(_this){
          var namesDOM = document.getElementsByClassName('name');
          var index = _getIndex(namesDOM,_this);
-         myContacts.contacts[index].setName(_this.value);
+         myList.contacts[index].setName(_this.value);
         }
         
     
@@ -85,14 +85,14 @@ var appContacts = (function(){
     var _editSurname = function(_this){
          var surnamesDOM = document.getElementsByClassName('surname');
          var index = _getIndex(surnamesDOM,_this);
-         myContacts.contacts[index].setSurname(_this.value);
+         myList.contacts[index].setSurname(_this.value);
         }
     
 
     var _editTelephone = function(_this){
          var telsDOM = document.getElementsByClassName('phone');
          var index = _getIndex(telsDOM,_this);
-         myContacts.contacts[index].setTel(_this.value);
+         myList.contacts[index].setTel(_this.value);
              }
         
     
@@ -110,7 +110,7 @@ var appContacts = (function(){
         
          var gendersDOM = document.getElementsByClassName('gender');
          var index = _getIndex(gendersDOM,_this);
-         myContacts.contacts[index].setGender(gender);             
+         myList.contacts[index].setGender(gender);             
         }
         
     
