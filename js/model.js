@@ -1,8 +1,8 @@
 class Contact {
     constructor(name){
-        this.name = 'Undefined';
-        this.surname = 'Undefined';
-        this.tel = 'Undefined';
+        this.name = '';
+        this.surname = '';
+        this.tel = '';
         this.gender = "m";
     }
     
