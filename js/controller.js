@@ -63,9 +63,9 @@ var appContacts = (function(){
         if(listStoraged){
             for(let i = 0; i <  listStoraged.contacts.length; i++){
                 printContact();
-                myList.add(listStoraged.contacts[i]);   
+                myList.add(_loadOldContact(listStoraged.contacts[i]))
                 loadValues(contactsDOM[i], listStoraged.contacts[i]);    
-                 }
+                }
             }
     }
 
@@ -77,8 +77,6 @@ var appContacts = (function(){
     var _editName = function(_this){
          var namesDOM = document.getElementsByClassName('name');
          var index = _getIndex(namesDOM,_this);
-         console.table(myList.contacts)
-         console.log(index)
          myList.contacts[index].setName(_this.value);
         }
         
@@ -118,6 +116,10 @@ var appContacts = (function(){
     
     var _getIndex = function(nodeList,_this){
         return Array.prototype.indexOf.call(nodeList, _this);
+    }
+    
+    var _loadOldContact = function(contact){
+        return new Contact(contact.name,contact.surname,contact.tel,contact.gender);
     }
 
     return{

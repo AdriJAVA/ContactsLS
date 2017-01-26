@@ -1,9 +1,9 @@
 class Contact {
-    constructor(name){
-        this.name = '';
-        this.surname = '';
-        this.tel = '';
-        this.gender = "m";
+    constructor(name,surname,tel,gender){
+        this.name = name || '';
+        this.surname = surname || '';
+        this.tel = tel || '';
+        this.gender = gender || 'm';
     }
     
     setName(name){
