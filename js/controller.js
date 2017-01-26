@@ -77,6 +77,7 @@ var appContacts = (function(){
     var _editName = function(_this){
          var namesDOM = document.getElementsByClassName('name');
          var index = _getIndex(namesDOM,_this);
+         console.table(myList.contacts)
          console.log(index)
          myList.contacts[index].setName(_this.value);
         }
